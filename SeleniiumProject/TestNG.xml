@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<!-- TO PRINT ALL TEST CASES  -->
+ <!-- <suite name = "test suit"  verbose="2"  >
+<test name = "test cases"   >
+<classes>
+<class name ="testNG.GroupExample"   ></class>
+ <class name ="testNG.OrderOfExecution"   ></class>
+<class name ="testNG.HandlingDependency"   ></class>
+<class name ="testNG.SampleTestCase"   ></class> 
+</classes> 
+</test>
+</suite> -->
+
+
+
+
+             <!--  TO PRINT GROUPS TESTS -->
+<!--  <suite name = "test suit"  verbose="2"  >
+<test name = "test cases"   >
+<classes>
+<groups>
+ <run>
+ <include  name = "vivo"   > </include>
+  <include name = "oppo" > </include>
+ <class name ="testNG.GroupExample"   ></class>
+</run>
+</groups>
+</classes> 
+</test>
+</suite> -->
+
+ <!-- TO EXECUTE PARAMETERIZED TESTCASE-->
+ <!-- <suite name="testsuit">
+ <test name = "testcase">
+ <parameter name="Name"   value = "surya"   >
+ <classes>
+ <class name="testNG.ParameterizationExample"  > </class>
+ </classes>
+ </parameter>
+ </test>
+ </suite> -->
+<!--   <suite name="testsuit"    parallel="methods"    thread-count="5"> 
+ <test name = "testcase">
+ <classes>
+ <class name="testNG.ParllelExecutionExample"  > </class>
+ </classes>
+ </test>
+ </suite>  -->
+ 
+ <!--  LISTENERS EXAMPLE  -->
+ <suite name="TEST SUITE"  >
+ <listeners>
+ <listener class-name="testNG.ListenersExample"></listener>
+ </listeners>
+ <test name="test">
+ <classes>
+ <class name="testNG.SampleTestCase"></class>
+  <class name="testNG.OrderOfExecution"></class>
+ </classes>
+ </test>
+ </suite>  
+  
